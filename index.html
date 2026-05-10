@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godwin's Economic Framework</title>
+    <style>
+        /* Original Navy Blue and White Theme */
+        :root {
+            --navy: #243b55;
+            --light-bg: #f0f2f5;
+            --white: #ffffff;
+            --accent-blue: #3498db;
+            --accent-red: #e74c3c;
+            --text-main: #2c3e50;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .header-section h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .header-section p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-top: 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -50px auto 60px;
+            padding: 0 20px;
+        }
+
+        .law-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--accent-blue);
+        }
+
+        h2 {
+            color: var(--navy);
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .formula-display {
+            background: #f8f9fa;
+            border-left: 6px solid var(--accent-red);
+            padding: 25px;
+            margin: 25px 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 1.4rem;
+            color: #333;
+            text-align: center;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .vast-details {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .variable-key {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+            padding: 15px;
+            background: #eff7ff;
+            border-radius: 6px;
+            font-weight: bold;
+            color: var(--navy);
+        }
+
+        /* Solver Styles */
+        .solver-section {
+            background: var(--navy);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .solver-section h2 {
+            color: white;
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 80%;
+            max-width: 400px;
+            padding: 15px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        button {
+            width: 80%;
+            max-width: 400px;
+            background: var(--accent-red);
+            color: white;
+            border: none;
+            padding: 18px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        button:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+
+        #output-area {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-section">
+    <h1>Godwin's Laws of Discount</h1>
+    <p>A Vast Mathematical Framework for Economic Price Calculation</p>
+</div>
+
+<div class="container">
+    
+    <div class="law-card">
+        <h2>1. Godwin's First Law of Discount</h2>
+        <p>This law dictates the precise method for calculating the amount removed from a fixed price. It states that the discount of a particular object is strictly equal to the division of the rate and the percentage constant, subsequently multiplied by the Market Price.</p>
+        
+        <div class="variable-key">
+            <span>D = Discount Amount</span>
+            <span>MP = Market Price (Fixed)</span>
+            <span>d = Discount Rate (%)</span>
+            <span>C = Constant (100)</span>
+        </div>
+
+        <div class="formula-display">D = MP * ( d / C )</div>
+
+        <div class="vast-details">
+            <strong>Detailed Derivation:</strong><br>
+            To derive the Discount Amount, we first establish the fractional relationship between the Rate (d) and the Whole Constant (C). This yields a decimal multiplier. By applying this multiplier to the total Market Price (MP), we isolate the specific value of the discount.
+        </div>
+    </div>
+
+    <div class="law-card">
+        <h2>2. Godwin's Second Law of Discount</h2>
+        <p>The Second Law defines the Net Price—the actual value remaining after a discount has been applied. It states that the Discounted Price is the mathematical difference between the initial Market Price and the calculated Discount.</p>
+
+        <div class="formula-display">NP = MP - D</div>
+
+        <div class="vast-details">
+            <strong>The Unified Mathematical Derivation:</strong><br>
+            By substituting the first law into the second, we create a unified formula that allows for the calculation of the final price in a single step:<br><br>
+            <em>Step 1:</em> Start with NP = MP - D<br>
+            <em>Step 2:</em> Replace D with [MP * (d/C)]<br>
+            <em>Final Unified Form:</em> <strong>NP = (MP * C - MP * d) / C</strong>
+        </div>
+    </div>
+
+    <div class="law-card">
+        <h2>3. Laws of Percentages on Fractions</h2>
+        <p>The percentage of any value is the product of that specific number and the percentage constant. This provides the framework for converting between whole values and fractional percentage representations.</p>
+        
+        <div class="formula-display">P = n * C</div>
+
+        <div class="vast-details">
+            <strong>The Reversion Process:</strong><br>
+            To convert a percentage back into a standard numerical value, the formula is inverted. The number is equal to the product of the Percentage (P) and the inverse of the Constant (1/C).<br><br>
+            <strong>n = P * ( 1 / C )</strong>
+        </div>
+    </div>
+
+    <div class="solver-section">
+        <h2>The Godwin Formula Solver</h2>
+        <p>Enter your economic data below to calculate the Net Price (NP).</p>
+        
+        <div class="input-group">
+            <input type="number" id="val_mp" placeholder="Enter Market Price (MP)">
+        </div>
+        <div class="input-group">
+            <input type="number" id="val_d" placeholder="Enter Discount Rate (d%)">
+        </div>
+        
+        <button onclick="solveGodwin()">Solve Formula</button>
+
+        <div id="output-area">Net Price (NP): --</div>
+    </div>
+
+</div>
+
+<script>
+    function solveGodwin() {
+        const mp = parseFloat(document.getElementById('val_mp').value);
+        const d = parseFloat(document.getElementById('val_d').value);
+        const c = 100;
+
+        if (!isNaN(mp) && !isNaN(d)) {
+            // First: D = MP * (d/c)
+            const discountAmount = mp * (d / c);
+            // Second: NP = MP - D
+            const netPrice =
